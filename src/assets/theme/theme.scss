@@ -1,0 +1,57 @@
+// Colors
+// Colors - Colors
+$color-dark-100: #333533;
+$color-dark-500: #202020;
+$color-dark-900: #000000;
+$color-light: #ffffff;
+$color-brand: #ebfc0f;
+
+// Colors - Gradients
+$color-linear-rgb: linear-gradient(
+  90deg,
+  #f1c40f 0%,
+  #e74c3c 25%,
+  #8e44ad 50%,
+  #3498db 75%,
+  #2ecc71 100%
+);
+$color-linear-dark: linear-gradient(90deg, #000 50%, #202020 75%, #333533 100%);
+
+// Colors - Aliases
+$color-text-highlighted: $color-brand;
+$color-text-base: $color-light;
+$color-text-invert: $color-dark-900;
+$color-text-info: $color-dark-100;
+$color-background-base: $color-dark-900;
+$color-background-light: $color-dark-100;
+$color-background-invert: $color-light;
+
+// Texts
+// Texts - Sizes
+$text-size-small: 13px;
+$text-size-base: 20px;
+$text-size-big: 30px;
+$text-size-large: 100px;
+$text-size-huge: 160px;
+
+// Texts - Family
+@mixin text-family-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+@mixin text-family-paragraph-normal {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+@mixin text-family-paragraph-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+// Border
+// Border - Widths
+$border-width-base: 3px;
+
+// Transition
+$transition-normal: 200ms;
+$transition-slow: 400ms;

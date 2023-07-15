@@ -1,0 +1,8 @@
+@import "../../assets/theme/theme.scss";
+
+.text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: $color-linear-rgb;
+}

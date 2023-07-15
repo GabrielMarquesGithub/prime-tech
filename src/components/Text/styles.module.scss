@@ -1,0 +1,67 @@
+@import "../../assets/theme/theme.scss";
+
+.text {
+  text-decoration: none;
+  height: min-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+
+  //variant
+  &.variant-base {
+    color: $color-text-base;
+  }
+
+  &.variant-invert {
+    color: $color-text-invert;
+  }
+
+  &.variant-info {
+    color: $color-text-info;
+  }
+
+  // sizes
+  &.size-small {
+    font-size: $text-size-small;
+    line-height: $text-size-small;
+  }
+
+  &.size-base {
+    font-size: $text-size-base;
+    line-height: $text-size-base;
+  }
+
+  &.size-big {
+    font-size: $text-size-big;
+    line-height: $text-size-big;
+  }
+
+  &.size-large {
+    font-size: $text-size-large;
+    line-height: $text-size-large;
+  }
+
+  &.size-huge {
+    font-size: $text-size-huge;
+    line-height: $text-size-huge;
+  }
+
+  // decoration
+  &.underline {
+    text-decoration: underline;
+  }
+
+  // lineLimit
+  &.lineLimit {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &.lineLimit-1 {
+    -webkit-line-clamp: 1;
+  }
+
+  &.lineLimit-2 {
+    -webkit-line-clamp: 2;
+  }
+}

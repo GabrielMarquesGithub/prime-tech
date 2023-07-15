@@ -1,0 +1,44 @@
+@import "../../assets/theme/theme.scss";
+
+.item {
+  width: 100%;
+  height: 25%;
+  border-right: $border-width-base solid $color-background-light;
+
+  position: relative;
+  z-index: 1;
+
+  cursor: pointer;
+
+  transition: $transition-slow;
+
+  // special
+  &::after {
+    content: " ";
+
+    width: 0%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    background: $color-linear-dark;
+
+    transition: $transition-slow;
+  }
+
+  // state
+  &:not(.selected):hover {
+    border-right-color: $color-brand;
+  }
+
+  &.selected {
+    border-right-color: $color-brand;
+    // special
+    &::after {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../assets/theme/theme.scss";
+
+.container {
+  // sizes
+  &.small {
+    &,
+    svg,
+    path {
+      max-width: 20px;
+      max-height: 20px;
+    }
+  }
+
+  &.base {
+    &,
+    svg,
+    path {
+      max-width: 30px;
+      max-height: 30px;
+    }
+  }
+
+  &.big {
+    &,
+    svg,
+    path {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+
+  // &.huge {
+  //   &,
+  //   svg,
+  //   path {
+  //     max-width: 100px;
+  //     max-height: 100px;
+  //   }
+  // }
+
+  //variants
+  // &.info {
+  //   svg,
+  //   path {
+  //     fill: ${semantic.info};
+  //   }
+  // }
+
+  // &.error {
+  //   svg,
+  //   path {
+  //     fill: ${semantic.error};
+  //   }
+  // }
+
+  // &.success {
+  //   svg,
+  //   path {
+  //     fill: ${semantic.success};
+  //   }
+  // }
+}

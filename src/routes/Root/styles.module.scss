@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+
+  // children
+  .aside {
+    height: 100vh;
+  }
+
+  .header {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    //children
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      user-select: none;
+    }
+  }
+}
