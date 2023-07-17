@@ -28,11 +28,12 @@ $color-background-invert: $color-light;
 
 // Texts
 // Texts - Sizes
+$text-size-little: 10px;
 $text-size-small: 13px;
 $text-size-base: 20px;
 $text-size-big: 30px;
-$text-size-large: 100px;
-$text-size-huge: 160px;
+$text-size-large: 60px;
+$text-size-huge: 100px;
 
 // Texts - Family
 @mixin text-family-title {

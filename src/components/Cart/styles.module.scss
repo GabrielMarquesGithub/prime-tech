@@ -1,0 +1,33 @@
+@import "../../assets/theme/theme.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  cursor: pointer;
+
+  // children
+  .icon-container {
+    padding: 5px;
+
+    position: relative;
+
+    // children
+    .icon-number-container {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: $color-brand;
+    }
+  }
+}

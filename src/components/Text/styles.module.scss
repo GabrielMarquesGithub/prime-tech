@@ -19,7 +19,16 @@
     color: $color-text-info;
   }
 
+  &.variant-highlighted {
+    color: $color-text-highlighted;
+  }
+
   // sizes
+  &.size-little {
+    font-size: $text-size-little;
+    line-height: $text-size-little;
+  }
+
   &.size-small {
     font-size: $text-size-small;
     line-height: $text-size-small;

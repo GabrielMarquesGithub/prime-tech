@@ -1,7 +1,6 @@
 .container {
   display: grid;
   grid-template-columns: 150px 1fr;
-  gap: 20px;
 
   // children
   .aside {
@@ -9,17 +8,27 @@
   }
 
   .header {
-    height: 80px;
+    height: 60px;
+    padding: 20px;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
     //children
-    .logo-container {
+    .logo-container,
+    .cart-container {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
+    }
 
+    .logo-container {
       user-select: none;
+    }
+
+    .cart-container {
+      cursor: pointer;
     }
   }
 }

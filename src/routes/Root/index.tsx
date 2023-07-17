@@ -9,7 +9,9 @@ import { ProductCard } from "../../components/ProductCard";
 import { Icon } from "../../components/Icon";
 import { HighlightText } from "../../components/HighlightText";
 
-import img from "../../assets/images/1-40-520x520-removebg-preview.png";
+import img from "../../assets/images/erion-tgt-rgb-sem-gpu-amd-01-removebg-preview.png";
+import { Cart } from "../../components/Cart";
+import { FeaturedProduct } from "../../components/FeaturedProduct";
 
 const mock: Record<string, string>[] = [
   { FONTE: "750W" },
@@ -61,7 +63,17 @@ function Root() {
               Prime <HighlightText>Tech</HighlightText>
             </Text>
           </section>
+          <Cart />
         </header>
+        <main>
+          <FeaturedProduct
+            heading="PC.Gamer"
+            caption="Hydra"
+            specifications={mock}
+            imageAlt="teste"
+            imageUrl={img}
+          />
+        </main>
       </section>
     </div>
   );

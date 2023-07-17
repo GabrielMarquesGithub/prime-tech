@@ -36,6 +36,8 @@
 
   &.selected {
     border-right-color: $color-brand;
+
+    pointer-events: none;
     // special
     &::after {
       width: 100%;

@@ -9,12 +9,7 @@ function ProductCard({
 }: IProductCardProps) {
   return (
     <div className={styles.container}>
-      <img
-        className={styles.img}
-        src={imageUrl}
-        alt={imageAlt}
-        title={imageAlt}
-      />
+      <img className={styles.img} src={imageUrl} alt={imageAlt} />
       <ul className={styles["specification-list"]}>
         {specifications.slice(0, 4).map((specification) => {
           const key = Object.keys(specification)[0];

@@ -1,5 +1,4 @@
-export interface IProductCardProps {
-  imageUrl: string;
-  imageAlt: string;
-  specifications: Record<string, string>[];
-}
+import { IProduct } from "../../types/IProduct";
+
+export interface IProductCardProps
+  extends Pick<IProduct, "imageAlt" | "imageUrl" | "specifications"> {}
