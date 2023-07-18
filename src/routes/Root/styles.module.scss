@@ -1,34 +1,51 @@
+@import "../../assets/theme/theme.scss";
+
 .container {
+  height: 100vh;
+
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 12% 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "nav header"
+    "nav main";
 
   // children
   .aside {
-    height: 100vh;
+    grid-area: nav;
   }
 
+  // children
   .header {
-    height: 60px;
-    padding: 20px;
+    grid-area: header;
+
+    padding: 0 20px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    //children
+    // children
     .logo-container,
     .cart-container {
       display: flex;
       align-items: center;
-      gap: 15px;
     }
 
     .logo-container {
+      gap: 15px;
+
       user-select: none;
     }
 
     .cart-container {
       cursor: pointer;
     }
+  }
+
+  .main {
+    grid-area: main;
+
+    max-width: 100%;
   }
 }

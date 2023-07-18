@@ -1,3 +1,4 @@
+import styles from "./styles.module.scss";
 import { IButtonProps } from "./types";
 
 function Button({
@@ -8,7 +9,9 @@ function Button({
   disabled = false,
   ...rest
 }: IButtonProps) {
-  const classNames = `${size} ${variant} ${shape}`;
+  const classNames = `${styles.button} ${styles[size]} ${
+    variant && styles[variant]
+  }  ${shape && styles[shape]}`;
 
   return (
     <button

@@ -4,8 +4,7 @@ import styles from "./styles.module.scss";
 
 import { ItemsList } from "../../components/ItemsList";
 import { Text } from "../../components/Text";
-import { Item } from "../../components/Item";
-import { ProductCard } from "../../components/ProductCard";
+import { ProductCardWithEdge } from "../../components/ProductCardWithEdge";
 import { Icon } from "../../components/Icon";
 import { HighlightText } from "../../components/HighlightText";
 
@@ -25,56 +24,55 @@ function Root() {
     <div className={styles.container}>
       <aside className={styles.aside}>
         <ItemsList>
-          <Item>
-            <ProductCard
+          <li>
+            <ProductCardWithEdge
               specifications={mock}
               imageAlt="teste"
               imageUrl={img}
             />
-          </Item>
-          <Item selected={true}>
-            <ProductCard
+          </li>
+          <li>
+            <ProductCardWithEdge
+              selected={true}
               specifications={mock}
               imageAlt="teste"
               imageUrl={img}
             />
-          </Item>
-          <Item>
-            <ProductCard
+          </li>
+          <li>
+            <ProductCardWithEdge
               specifications={mock}
               imageAlt="teste"
               imageUrl={img}
             />
-          </Item>
-          <Item>
-            <ProductCard
+          </li>
+          <li>
+            <ProductCardWithEdge
               specifications={mock}
               imageAlt="teste"
               imageUrl={img}
             />
-          </Item>
+          </li>
         </ItemsList>
       </aside>
-      <section>
-        <header className={styles.header}>
-          <section className={styles["logo-container"]}>
-            <Icon icon={<LogoIcon />} />
-            <Text is="h1">
-              Prime <HighlightText>Tech</HighlightText>
-            </Text>
-          </section>
-          <Cart />
-        </header>
-        <main>
-          <FeaturedProduct
-            heading="PC.Gamer"
-            caption="Hydra"
-            specifications={mock}
-            imageAlt="teste"
-            imageUrl={img}
-          />
-        </main>
-      </section>
+      <header className={styles.header}>
+        <section className={styles["logo-container"]}>
+          <Icon icon={<LogoIcon />} />
+          <Text is="h1">
+            Prime <HighlightText>Tech</HighlightText>
+          </Text>
+        </section>
+        <Cart />
+      </header>
+      <main className={styles.main}>
+        <FeaturedProduct
+          heading="PC.Gamer"
+          caption="Hydra"
+          specifications={mock}
+          imageAlt="teste"
+          imageUrl={img}
+        />
+      </main>
     </div>
   );
 }

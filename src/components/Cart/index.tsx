@@ -5,10 +5,11 @@ import { ICartProps } from "./types";
 
 import { Icon } from "../Icon";
 import { Text } from "../Text";
+import { Button } from "../Button";
 
 function Cart({ ...rest }: ICartProps) {
   return (
-    <section className={styles.container}>
+    <Button variant="transparent" role="button" title="Abrir carrinho">
       <Text is="span">CART</Text>
       <div className={styles["icon-container"]}>
         <Icon icon={<CartIcon />} />
@@ -18,7 +19,7 @@ function Cart({ ...rest }: ICartProps) {
           </Text>
         </span>
       </div>
-    </section>
+    </Button>
   );
 }
 

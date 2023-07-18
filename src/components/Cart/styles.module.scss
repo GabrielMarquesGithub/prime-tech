@@ -1,33 +1,25 @@
 @import "../../assets/theme/theme.scss";
 
-.container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+// children
+.icon-container {
+  padding: 5px;
 
-  cursor: pointer;
+  position: relative;
 
   // children
-  .icon-container {
-    padding: 5px;
+  .icon-number-container {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
 
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
 
-    // children
-    .icon-number-container {
-      width: 20px;
-      height: 20px;
-      border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background: $color-brand;
-    }
+    background: $color-brand;
   }
 }

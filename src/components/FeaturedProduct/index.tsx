@@ -8,6 +8,7 @@ function FeaturedProduct({
   caption,
   imageUrl,
   imageAlt,
+  specifications,
 }: IFeaturedProductProps) {
   return (
     <section className={styles.container}>
@@ -24,6 +25,7 @@ function FeaturedProduct({
           {caption}
         </Text>
       </section>
+      <section className={styles.footer}></section>
     </section>
   );
 }
