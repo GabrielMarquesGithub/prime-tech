@@ -1,5 +1,7 @@
 # Prime Tech
 
+<img src="https://github.com/NikisGabriel/prime-tech/blob/main/public/logo-dark.svg" alt="Logo" style="width: 200px; height: auto;" />
+
 ## Descrição
 
 Bem-vindo ao projeto Prime Tech loja de Computadores Gamers! Este é o primeiro de uma sequência de projetos que têm como foco a criação de aplicações front-end utilizando as tecnologias que tenho como base. Neste projeto, vamos desenvolver um E-Commerce voltado para a venda de computadores gamers, oferecendo uma plataforma intuitiva e envolvente para entusiastas de hardware.
