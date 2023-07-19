@@ -12,7 +12,7 @@ function ProductCard({
     <div className={styles.container}>
       <img className={styles.img} src={imageUrl} alt={imageAlt} />
       <div className={styles["specification-list-container"]}>
-        <SpecificationList specifications={specifications} />
+        <SpecificationList specifications={specifications.slice(0, 4)} />
       </div>
     </div>
   );

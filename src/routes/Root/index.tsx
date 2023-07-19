@@ -17,6 +17,9 @@ const mock: Record<string, string>[] = [
   { RAM: "4BG" },
   { PROCESSADOR: "intel i5" },
   { SSD: "1T" },
+  { "PLACA MÃE": "Aorus" },
+  { COOLER: "Master Liquid" },
+  { LED: "LCG Eletro Digital Super" },
 ];
 
 function Root() {
@@ -67,7 +70,7 @@ function Root() {
       <main className={styles.main}>
         <FeaturedProduct
           heading="PC.Gamer"
-          caption="Hydra"
+          caption="Imperatriz Hydra"
           specifications={mock}
           imageAlt="teste"
           imageUrl={img}

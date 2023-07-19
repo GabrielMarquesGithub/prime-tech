@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 
 import { Text } from "../Text";
 import { IFeaturedProductProps } from "./types";
+import { SpecificationList } from "../SpecificationList";
 
 function FeaturedProduct({
   heading,
@@ -18,14 +19,27 @@ function FeaturedProduct({
         </Text>
       </header>
       <section className={styles.body}>
-        <div className={styles["img-container"]}>
-          <img className={styles.img} src={imageUrl} alt={imageAlt} />
-        </div>
-        <Text is="h3" size="large">
+        <img className={styles.img} src={imageUrl} alt={imageAlt} />
+        <Text is="h3" size="large" lineLimit={2}>
           {caption}
         </Text>
       </section>
-      <section className={styles.footer}></section>
+      <section className={styles.specifications}>
+        <span>
+          <Text is="span" variant="highlighted">
+            SPECS
+          </Text>
+        </span>
+        <div>
+          <SpecificationList specifications={specifications} />
+        </div>
+      </section>
+      <section className={styles.control}>
+        <Text is="h3">controle</Text>
+      </section>
+      <section className={styles.next}>
+        <Text is="h3">proximo</Text>
+      </section>
     </section>
   );
 }

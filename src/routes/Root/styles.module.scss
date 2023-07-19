@@ -4,8 +4,8 @@
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 12% 1fr;
-  grid-template-rows: 80px 1fr;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 12% 88%;
   grid-template-areas:
     "nav header"
     "nav main";
@@ -45,7 +45,5 @@
 
   .main {
     grid-area: main;
-
-    max-width: 100%;
   }
 }

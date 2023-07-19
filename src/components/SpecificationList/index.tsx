@@ -5,7 +5,7 @@ import { ISpecificationListProps } from "./types";
 function SpecificationList({ specifications }: ISpecificationListProps) {
   return (
     <ul className={styles.list}>
-      {specifications.slice(0, 4).map((specification) => {
+      {specifications.map((specification) => {
         const key = Object.keys(specification)[0];
         const value = specification[key];
 
